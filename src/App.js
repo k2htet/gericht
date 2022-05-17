@@ -19,9 +19,10 @@ const App = () => {
   const [loading, setloading] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
-      setloading(true);
-    }, 5000);
+    window.addEventListener("load", () => setloading(true));
+    // setTimeout(() => {
+    //   setloading(true);
+    // }, 5000);
   }, []);
 
   return loading ? (
