@@ -1,0 +1,40 @@
+.app__header {
+  background: var(--color-black);
+}
+.app__wrapper_info {
+  margin-top: 1rem;
+}
+.app__header-h1 {
+  font-family: var(--font-base);
+  font-size: 90px;
+  color: var(--color-golden);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 100px;
+}
+
+.app__wrapper_img {
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .app__header-h1 {
+    font-size: 60px;
+    line-height: 80px;
+  }
+
+  .app__wrapper_info p {
+    margin: 1rem 0 !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__header-h1 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  .app__wrapper_info p {
+    margin: 1rem 0 !important;
+  }
+}
