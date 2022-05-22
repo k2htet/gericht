@@ -18,7 +18,9 @@ import { PuffLoader } from "react-spinners";
 const App = () => {
   const [loading, setloading] = useState(true);
 
-  useEffect(() => setloading(false), []);
+  useEffect(() => {
+    setTimeout(() => setloading(false), 6000);
+  }, []);
 
   return loading ? (
     <div className="loading-container">
