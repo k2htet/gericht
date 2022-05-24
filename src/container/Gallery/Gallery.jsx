@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 
 import { SubHeading } from "../../components";
 import { images } from "../../constants";
+import MyImage from "../../components/MyImage";
 
 import "./Gallery.css";
 
@@ -93,7 +94,8 @@ const Gallery = () => {
               className="app__gallery-images_card flex__center"
               key={`gallery_images-${index}`}
             >
-              <img src={img} alt="img" />
+              <MyImage image={{ src: img, alt: "img" }} />
+
               <BsInstagram
                 className="gallery__image-icon"
                 color="#fff"

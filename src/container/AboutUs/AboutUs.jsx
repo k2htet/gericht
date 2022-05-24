@@ -1,11 +1,12 @@
 import images from "../../constants/images";
 import { motion } from "framer-motion";
+import MyImage from "../../components/MyImage";
 import "./AboutUs.css";
 
 const AboutUs = () => (
   <div className="app__aboutus app__bg flex__center" id="about">
     <div className="app__aboutus-overlay flex__center">
-      <img src={images.G} alt="G" />
+      <MyImage image={{ src: images.G, alt: "G" }} />
     </div>
 
     <div className="app__aboutus-content flex__center">
@@ -36,7 +37,7 @@ const AboutUs = () => (
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <img src={images.knife} alt="knife" />
+        <MyImage image={{ src: images.knife, alt: "knife" }} />
       </motion.div>
 
       <motion.div

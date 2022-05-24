@@ -2,7 +2,7 @@ import React from "react";
 import { SubHeading } from "../../components";
 import images from "../../constants/images";
 import { motion } from "framer-motion";
-
+import MyImage from "../../components/MyImage";
 import "./Header.css";
 const header = {
   init: {
@@ -63,7 +63,8 @@ const Header = () => (
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
     >
-      <img src={images.welcome} alt="header img" />
+      {/* <img src={images.welcome} alt="header img" /> */}
+      <MyImage image={{ src: images.welcome, alt: "header img" }} />
     </motion.div>
   </div>
 );

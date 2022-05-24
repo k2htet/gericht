@@ -1,6 +1,7 @@
 import { images, data } from "../../constants";
 import { SubHeading, MenuItem } from "../../components";
 import { motion } from "framer-motion";
+import MyImage from "../../components/MyImage";
 import "./SpecialMenu.css";
 
 const menu = {
@@ -62,7 +63,7 @@ const SpecialMenu = () => (
       </motion.div>
 
       <div className="app__specialMenu-menu_img">
-        <img src={images.menu} alt="menu img" />
+        <MyImage image={{ src: images.menu, alt: "menu img" }} />
       </div>
 
       <motion.div
